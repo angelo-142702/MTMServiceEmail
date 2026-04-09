@@ -1,27 +1,15 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/send-email.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/email",
-      "methods": ["POST", "GET", "OPTIONS"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
-        "Access-Control-Allow-Credentials": "true"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/email",
-      "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
-    }
-  ]
+  "name": "refrigeracion-api",
+  "version": "1.0.0",
+  "description": "API de contacto para MTM SERVICES HVAC",
+  "main": "api/contact.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "resend": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }

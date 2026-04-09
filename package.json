@@ -2,13 +2,15 @@
   "name": "emailmtm",
   "version": "1.0.0",
   "main": "api/send-email.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "send-email.js"
   },
   "author": "angelo",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "resend": "^6.10.0"
+    "resend": "^6.10.0",
+    "vercel": "^50.42.0"
   }
 }
