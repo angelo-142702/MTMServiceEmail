@@ -1,16 +1,15 @@
 {
-  "name": "emailmtm",
+  "name": "refrigeracion-api",
   "version": "1.0.0",
-  "main": "api/send-email.js",
-  "type": "module",
+  
+  "main": "api/contact.js",
   "scripts": {
-    "test": "send-email.js"
+    "dev": "vercel dev"
   },
-  "author": "angelo",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "resend": "^6.10.0",
-    "vercel": "^50.42.0"
+    "resend": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
